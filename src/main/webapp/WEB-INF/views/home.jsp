@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
 <!DOCTYPE html>
@@ -6,7 +6,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
 </script>
 <script>
-
+//test
 //라디오 버튼 체크시 div on/off
 $(function(){
 	$("#find_phone").click(function(){
