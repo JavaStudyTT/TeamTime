@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mem2Map">
+	<select id="selectOne" parameterType="kr.co.mybatis.mem2.dto.Mem2DTO" resultType="kr.co.mybatis.mem2.dto.Mem2DTO">
+		
+		SELECT *
+		FROM mem2
+		WHERE NAME = #{name} AND EMAIL = #{email}
+	</select>
+	
+	<select id="selectOnePsw" parameterType="kr.co.mybatis.mem2.dto.Mem2DTO" resultType="kr.co.mybatis.mem2.dto.Mem2DTO">
+		SELECT *
+		FROM mem2
+		WHERE ID= #{id} AND NAME = #{name} AND EMAIL = #{email}
+	</select>
+	
+	<select id="selectOneAnswer" parameterType="kr.co.mybatis.mem2.dto.Mem2DTO" resultType="kr.co.mybatis.mem2.dto.Mem2DTO">
+		SELECT *
+		FROM mem2
+		WHERE answer = #{answer}
+	</select>
+
+
+	<update id="updatePsw" parameterType="kr.co.mybatis.mem2.dto.Mem2DTO" >
+		UPDATE MEM2
+		SET pw = #{pwd}
+		WHERE ID = #{id}
+	</update>
+	
+
+
+
+</mapper>
